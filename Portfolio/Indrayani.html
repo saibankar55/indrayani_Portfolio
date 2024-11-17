@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrayani Nikam Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f4f4f9, #d3e0ea);
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            color: #12111196;
+            text-decoration: none;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #000507;
+            color: white;
+            text-align: center;
+            padding: 2em 1em;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1em;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+        }
+
+        .header p, .header blockquote {
+            font-size: 1.1em;
+            margin-top: 0.5em;
+        }
+
+        /* Tabs Styles */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5em;
+            gap: 1em;
+        }
+
+        .tab {
+            padding: 0.7em 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #007acc;
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab:hover {
+            background-color: #005f99;
+            transform: scale(1.05);
+        }
+
+        .tab.active {
+            background-color: #005f99;
+        }
+
+        /* Section Styles */
+        .tab-content {
+            display: none;
+            padding: 2em;
+            margin-top: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 80%;
+            max-width: 800px;
+            text-align: left;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #007acc;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 0.2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1em;
+        }
+
+        li {
+            margin-bottom: 0.8em;
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 1.2em;
+        }
+
+        /* Increase font size for project titles */
+        .projects strong {
+            font-size: 1.2em;
+            color: #005f99;
+        }
+
+        li:before {
+            content: "•";
+            color: #007acc;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -0.1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .tab {
+                padding: 0.5em 1em;
+            }
+            .tab-content {
+                width: 90%;
+            }
+        }
+        .tab-content.active img{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <img src="Indrayani.jpg" alt="Profile Picture">
+        <h1>Indrayani Somnath Nikam</h2>
+        <h2>TY Mechatronics Engineering Student</h2>
+        <blockquote>" I believe in the 3P, Practice, Preservance and positivity , these 3P aims to achieve the
+            goal. I also believing in the , " Be the leader of own self!" Also be capable to achieve
+            the success and the success will be at your feet."</blockquote>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" onclick="showTab(' Contact Me')"> Contact Me</div>
+        <div class="tab active" onclick="showTab(' Blender projects')"> Blender Projects</div>
+        <div class="tab active" onclick="showTab(' My projects')"> MY Projects</div>
+        <div class="tab" onclick="showTab('certifications')">Certifications</div>
+        <div class="tab" onclick="showTab('achievements')">Achievements</div>
+        <div class="tab" onclick="showTab('education')">Education</div>
+    </div>
+    <!-- Contact Me Section -->
+    <section id=" Contact Me" class="tab-content active">
+        <h2>Contact Here</h2>
+        <ul>
+            <li class="icon">
+                📧 Email: <a href="mailto:indrayaninikam424@gmail.com">indrayaninikam424@gmail.com</a>
+            </li>
+            <li class="icon">
+                📞 Phone: 9309137181
+            </li>
+             <li class="icon">
+            🌐 LinkedIn: <a href="https://www.linkedin.com/in/indrayani-nikam-1760b826a" target="_blank">Indrayani Nikam</a>
+        </li>
+        </ul>
+</section>
+
+    <!-- Blender Projects Section -->
+    <section id=" Blender projects" class="tab-content active">
+        <h2> Blender Projects</h2>
+        <ul>
+        
+            <li>
+                <h3>Shoes</h3>
+                <img src="Shoes.png" alt="Shoes">
+            
+            
+                <h3>Car</h3>
+                <img src="Car.png" alt="Car">
+            </li>
+            <li>
+                <h3>COnferance Room</h3>
+                <img src="Conferance Room.png" alt="Conferance Room">
+            </li>
+            <li>
+                <h3>Office</h3>
+                <img src="Office.png" alt="Office">
+            </li>
+            <li>
+                <li> 
+                    <h3>Virtual Musium</h3>
+                    <img src="Virtual Musium.png" alt="3d Models">
+                </li>
+                <h3>Sphere Robot</h3>
+                <img src="Sphere Robot.png" alt="Sphere Robot">
+            </li>
+            <li>
+                <h3>3D Models</h3>
+                <img src="Skincare.png" alt="3d Models">
+            </li>
+            <li> 
+                <img src="Cosmetic.png" alt="3d Models">
+            </li>
+            <li> 
+                <img src="Game.png" alt="3d Models">
+            </li>
+            <li> 
+                <img src="Beauti.png" alt="3d Models">
+            </li>
+            
+             <!-- Add Video Here -->
+        <li>
+            <h3> Autodesk Fusion 360 Projects</h3>
+            <video controls width="100%">
+                <source src="Autodesk Fusion 360.mp4" type="video/mp4">
+                
+            </video>
+        </li>
+        <li> 
+            <img src="Four Engine.png" alt="3d Models">
+        </li>
+    </ul>
+</section>
+
+            
+        </ul>
+    </section>
+    
+    <!-- MYProject  Section -->
+    <section id=" My projects" class="tab-content active">
+        <h2> My Projects</h2>
+        <ul>
+
+            </li>
+            <li><strong>Smart Band for Alzheimer’s Patients</strong>
+            <p>A smart band for Alzheimer's patients is a wearable device designed to monitor and assist
+                individuals with Alzheimer's disease. It typically features GPS tracking, health monitoring, and
+                emergency alert functions, helping caregivers keep track of the patient's location, vital signs, and
+                well-being in real-time.
+                </p></li>
+            
+            <li><strong>Automatic Rain Shelter</strong>
+            <p>An automatic rain shelter is a device that opens or closes automatically in response to weather
+                conditions, typically triggered by rain sensors. It provides instant protection from rain, offering
+                convenience and ensuring that outdoor spaces remain dry without manual intervention.</p></li>
+            <li><strong>Cotton Sowing Machine</strong><p>The Cotton Sowing Machine project focuses on designing an efficient, automated solution for
+                cotton farming. This machine aims to address common issues like inconsistent seed placement and
+                clogging in traditional sowing methods. the design improves seed delivery accuracy, enhances
+                planting efficiency, and minimizes labor needs.</p></li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="tab-content">
+        <h2>Certifications</h2>
+        <ul>
+            <li> Introduction to designing and manufacturing with fusion 360 </li>
+            <li>AWS Academy Cloud Foundation Course</li>
+            <li>Coursera certificate in Python programming language</li>
+            <li>Coursera certificate in c programming language </li>
+            <li>Mepro Pearson</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="tab-content">
+        <h2>Achievements</h2>
+        <ul>
+            <li><h3>MIT-ADT Project Expo 2K24 (04/2024 - Present)</h3></li>
+            <p> 1st Place, MIT ADT Project Expo 2k24 (National): Recognized for outstanding innovation and technical skills in a highly competi
+                national event.</p>
+            <li><h3> 5th Rank In Virtual Musium  Compitition ( Eyantra )</h3></li>
+            <p>The Virtual Museum competition challenged us to design immersive, digital museum experiences. I achieved 5th place,
+                showcasing innovative concepts for engaging and interactive virtual exhibits</p>
+        </ul>
+    </section>
+
+   <!-- Education Section -->
+<section id="education" class="tab-content">
+    <h2>Education</h2>
+    <ul>
+        <!-- SSC -->
+        <li>
+            <h3>SSC</h3>
+            <div style="display: flex; gap: 1em;">
+                <div><strong>Marks:</strong> 88.60%</div>
+                <div><strong>School:</strong>New High School Vaijapur</div>
+                <div><strong>Passing Year:</strong> 2020</div>
+            </div>
+        </li>
+
+        <!-- HSC -->
+        <li>
+            <h3>HSC</h3>
+            <div style="display: flex; gap: 1em;">
+                <div><strong>Marks:</strong> 79.67%</div>
+                <div><strong>College:</strong> Shree Samarth Junior College Lakh Khandala</div>
+                <div><strong>Passing Year:</strong> 2022</div>
+            </div>
+        </li>
+
+        <!-- B.Tech -->
+        <li>
+            <h3>FY Mechatronics</h3>
+            <div style="display: flex; gap: 1em;">
+                <div><strong>Institute:</strong>Sanjivani College Of Engineering Kopergaon</div>
+                <div><strong>CGPA:</strong>9.05</div>
+                <li>
+                <h3>SY Mechatronics</h3>
+            <div style="display: flex; gap: 1em;">
+                <div><strong>Institute:</strong>Sanjivani College Of Engineering Kopergaon</div>
+                <div><strong>CGPA:</strong>9.04</div>
+                </li>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(section => section.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
